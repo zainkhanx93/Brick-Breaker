@@ -33,12 +33,15 @@ public class SuperRainbow extends JPanel {
     private JFrame jf;
     private Kutch k1;
     private pop p1;
+    private int gameLevel;
     public reefHealth kh;
-    public reefScore sc1, sc2, sc3, sc4, sc5, tsc;
+    public reefScore sc1, sc2, sc3, sc4, sc5;
+    public totalScore tc;
 
     public LinkedList<gameObject> delete_list;
 
     public LinkedList<gameObject> Bricks;
+    public LinkedList<gameObject> Controls;
 
     public void balls (pop pops)
     {
@@ -49,15 +52,24 @@ public class SuperRainbow extends JPanel {
         Thread x;
         SuperRainbow trex = new SuperRainbow();
         trex.init();
+
         try {
             while (true) {
-                if(trex.k1 != null)
-                trex.k1.update();
-                for (Object object : trex.Bricks) {
-                    gameObject element = (gameObject) object;
-                    element.update(SuperRainbow.SCREEN_WIDTH, SuperRainbow.SCREEN_HEIGHT);
+                if(trex.Bricks.size() == 0) {
+                    trex.MoveNextLevel();
                 }
-                trex.repaint();
+                if(trex.k1 != null) {
+                    //trex.k1.update();
+                    for (Object object : trex.Bricks) {
+                        gameObject element = (gameObject) object;
+                        element.update(SuperRainbow.SCREEN_WIDTH, SuperRainbow.SCREEN_HEIGHT);
+                    }
+                    for (Object object : trex.Controls) {
+                        gameObject element = (gameObject) object;
+                        element.update(SuperRainbow.SCREEN_WIDTH, SuperRainbow.SCREEN_HEIGHT);
+                    }
+                    trex.repaint();
+                }
 
                 Thread.sleep(1000 / 70);
             }
@@ -67,20 +79,20 @@ public class SuperRainbow extends JPanel {
 
     }
 
-    public void init() {
-        this.jf = new JFrame("Kutch");
-        this.Bricks = new LinkedList<gameObject>();
-        this.delete_list = new LinkedList<gameObject>();
+    void MoveNextLevel(){
+        this.gameLevel++;
+        if (gameLevel == 1)
+            return;
+        if (gameLevel > 1)
+        {
+            this.p1.setNextSpeed();
+            this.p1.setRunning(false);
+        }
+        RedrawBricks();
 
-        // boarders
+    }
 
-        Bricks.add(new reefBricks(6,100,50,900,1,false));
-        Bricks.add(new reefBricks(6,100,50,900,0, false));
-        Bricks.add(new reefBricks(6,1000,50,900,0,false));
-
-
-        // wall of bricks go here
-
+    void RedrawBricks(){
         // row 1
         Bricks.add(new reefBricks(1,410,150,50,1,true));
         Bricks.add(new reefBricks(5,465,150,50,1,true));
@@ -176,40 +188,57 @@ public class SuperRainbow extends JPanel {
         Bricks.add(new reefBricks(5,520,550,50,1,true));
         Bricks.add(new reefBricks(5,580,550,50,1,true));
         Bricks.add(new reefBricks(2,635,550,50,1, true));
+    }
+
+    public void init() {
+        this.jf = new JFrame("Kutch");
+        this.Bricks = new LinkedList<gameObject>();
+        this.Controls = new LinkedList<gameObject>();
+        this.delete_list = new LinkedList<gameObject>();
+
+        // boarders
+
+        Controls.add(new reefBricks(6,100,50,900,1,false));
+        Controls.add(new reefBricks(6,100,50,900,0, false));
+        Controls.add(new reefBricks(6,1000,50,900,0,false));
+
+
+        // wall of bricks go here
+
+        RedrawBricks();
 
 
         // shows point values
-        Bricks.add(new reefBricks(1,1050,550,50,1,true));
-        Bricks.add(new reefBricks(2,1050,600,50,1,true));
-        Bricks.add(new reefBricks(3,1050,650,50,1,true));
-        Bricks.add(new reefBricks(4,1050,700,50,1,true));
-        Bricks.add(new reefBricks(5,1050,750,50,1, true));
+        Controls.add(new reefBricks(1,1050,550,50,1,true));
+        Controls.add(new reefBricks(2,1050,600,50,1,true));
+        Controls.add(new reefBricks(3,1050,650,50,1,true));
+        Controls.add(new reefBricks(4,1050,700,50,1,true));
+        Controls.add(new reefBricks(5,1050,750,50,1, true));
 
         // buffers the world
         this.sea = new BufferedImage(SuperRainbow.SCREEN_WIDTH, SuperRainbow.SCREEN_HEIGHT, BufferedImage.TYPE_INT_RGB);
 
 
 
+        tc = new totalScore(1110, 400,0,sc1);
+        kh = new reefHealth(1100,80,3,0);
+        k1 = new Kutch (450,900,0,0,150, 1, this);
+        p1 = new pop (520,600,3,0,90,this, kh,k1,tc);
+        Controls.add(p1);
+        Controls.add(k1);
+        Controls.add(tc);
 
-        kh = new reefHealth(1100,100,3,0);
-        k1 = new Kutch (480,900,0,0,80, 1, this);
-        p1 = new pop (450,800,0,0,this,k1);
 
         // shows the score for each brick
         sc1 = new reefScore(1,1110,550,100,this, k1);
         sc2 = new reefScore(2,1110,600,100,this, k1);
         sc3 = new reefScore(3,1110,650,100,this, k1);
         sc4 = new reefScore(4,1110,700,200,this, k1);
-        sc5 = new reefScore(5,1110,750,500,this, k1);
-      // tsc = new reefScore(6,1110,200,1,this,k1);
+        sc5 = new reefScore(5,1110,750,300,this, k1);
 
 
-        Bricks.add(k1);
 
-
-        //Bricks.add(p1);
-
-        reefControls kutch = new reefControls(k1, KeyEvent.VK_LEFT, KeyEvent.VK_RIGHT, this);
+        reefControls kutch = new reefControls(k1, p1,KeyEvent.VK_LEFT, KeyEvent.VK_RIGHT, KeyEvent.VK_ENTER, this);
         this.jf.addKeyListener(kutch);
         this.jf.setLayout(new BorderLayout());
         this.jf.add(this);
@@ -239,7 +268,7 @@ public class SuperRainbow extends JPanel {
         buffer = sea.createGraphics();
         super.paintComponent(g2);
         g2.drawImage(sea,null,0,0);
-        p1.drawImage(g2);
+        //p1.drawImage(g2);
         sc1.Draw(g2);
         sc2.Draw(g2);
         sc3.Draw(g2);
@@ -264,8 +293,13 @@ public class SuperRainbow extends JPanel {
             element.drawImage(g2);
 
         }
+        for(Object object : Controls) {
+            gameObject element = (gameObject) object;
+            element.drawImage(g2);
 
+        }
         this.kh.draw(g2);
+        //this.tc.drawImage(g2);
 
 
     }

@@ -5,7 +5,7 @@ public class Kutch extends gameObject{
 
 
     private int direction;
-   // private int x,y;
+    // private int x,y;
     private int vx,vy;
     private SuperRainbow sr;
     private reefHealth h;
@@ -23,17 +23,17 @@ public class Kutch extends gameObject{
         super(start_x,start_y,10,length);
         this.vx = vx;
         this.vy = vy;
-       // this.x = x;
+        // this.x = x;
         //this.y = y;
         this.sr = s;
-     //   this.h = rh;
+        //   this.h = rh;
 
-       if(dir != 1)
-       {
-           super.set_length(length);
-           super.set_width(10);
+        if(dir != 1)
+        {
+            super.set_length(length);
+            super.set_width(10);
 
-       }
+        }
         this.direction = dir;
 
     }
@@ -55,8 +55,8 @@ public class Kutch extends gameObject{
         this.leftPressed = false;
     }
 
-
-    public void update() {
+    @Override
+    public void update(int height, int width) {
         if (this.rightPressed)
         {
             this.moveRight();
@@ -69,23 +69,15 @@ public class Kutch extends gameObject{
 
     private void moveRight()
     {
-        if(checkWall(x,y)) {
-            this.x += 5;
-        }
-        else {
-            this.x-=50;
-        }
+        this.x += 10;
+
         checkBorder();
 
     }
     private void moveLeft()
     {
-        if(checkWall(x,y)) {
-            this.x -= 5;
-        }
-        else {
-            this.x += 50;
-        }
+        this.x -= 10;
+
         checkBorder();
 
     }
@@ -94,50 +86,21 @@ public class Kutch extends gameObject{
     {
         this.powers.setType(this.powers.getType() | powers.getType());
         powers.set_visible(false);
-       // sr.delete_list.add(powers);
+        // sr.delete_list.add(powers);
     }
 
     private  void checkBorder()
     {
-        if (x < 35) {
-            x = 35;
+        if (x < 110) {
+            x = 110;
         }
-        if (x >= SuperRainbow.SCREEN_WIDTH - 88) {
-            x = SuperRainbow.SCREEN_WIDTH - 88;
+        if (x >= 1000 - width ) {
+            x = 1000 - width ;
         }
-        if (y < 45) {
-            y = 45;
-        }
-        if (y >= SuperRainbow.SCREEN_HEIGHT - 80) {
-            y = SuperRainbow.SCREEN_HEIGHT - 80;
-        }
+
     }
 
-    boolean  checkWall(int x1, int y1) {
-        int x_, y_, len_, width_;
 
-        for (Object object : sr.Bricks) {
-            gameObject element = (gameObject) object;
-            if (this == element) continue;
-            if (!element.is_visible()) continue;
-            x_ = element.getx();
-            y_ = element.gety();
-            len_ = element.getLength();
-            width_ = element.getwidth();
-          //  System.out.println(x_ + " " + y_ + " " + len_ + " " + width_ + " " + x + " " + y);
-
-
-            if (((x1 > x_ && x1 < (x_ + width_)) && (y1 > y_ && y1 < (y_ + len_))) ||
-                    (((x1 + 70) > x_ && (x1 + 70) < (x_ + width_)) && (y1 > y_ && y1 < (y_ + len_))) ||
-                    ((x1 > x_ && x1 < (x_ + width_)) && ((y1 + 80) > y_ && (y1 + 80) < (y_ + len_))) ||
-                    (((x1 + 70) > x_ && (x1 + 70) < (x_ + width_)) && ((y1 + 80) > y_ && (y1 + 80) < (y_ + len_))))
-            {
-                return false;
-            }
-
-        }
-        return true;
-    }
 
     @Override
     public int whoAmI()

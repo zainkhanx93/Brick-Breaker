@@ -12,40 +12,41 @@ public class reefScore extends gameObject {
     reefScore(int type, int x, int y, int sc, SuperRainbow s, Kutch k)
     {
         super(x,y,20,20);
-       // this.x = x;
-      //  this.y = y;
+        // this.x = x;
+        //  this.y = y;
         this.sr = s;
-       this.k1 = k;
+        this.k1 = k;
         this.type = type;
         this.score = sc;
 
         if(type == 1)
         {
-           // no power ups
+            // no power ups
             // get the basic 100 pts
-            score = 100;
+            this.score = 100;
         }
         // multi pops
         if(type == 2)
         {
             // no power ups
             // 100 pts
-            score = 100;
+            this.score = 100;
         }
         if(type == 3)
         {
             // 100 pts
             // extra ball is released
-            score = 100;
+            this.score = 100;
         }
         if(type == 4)
         {
             //no power ups
             //double points
-            score = 200;
+            this.score = 200;
         }
         if(type == 5)
         {
+            this.score = 300;
             // 500 pts
             // takes 5 hit to destroy
         }
@@ -61,9 +62,16 @@ public class reefScore extends gameObject {
     {
         this.type = type;
     }
+
+
     public int getScore()
     {
-        return 0;
+        return score;
+    }
+
+    public void setScore(int sc)
+    {
+        this.score = sc;
     }
     public int getTotalscore()
     {
@@ -72,12 +80,12 @@ public class reefScore extends gameObject {
 
     public void Draw(Graphics g)
     {
-       g.setColor(Color.WHITE);
-       g.setFont(new Font("TimesRoman",Font.PLAIN,16));
-       g.drawString(Integer.toString(this.score),x,y);
-      // System.out.println("Score = "+ this.score);
+        g.setColor(Color.WHITE);
+        g.setFont(new Font("TimesRoman",Font.PLAIN,16));
+        g.drawString(Integer.toString(this.score),x,y);
+        // System.out.println("Score = "+ this.score);
 
-      // g.drawString(Integer.toString(this.totalscore), x, y);
+        // g.drawString(Integer.toString(this.totalscore), x, y);
 
     }
 

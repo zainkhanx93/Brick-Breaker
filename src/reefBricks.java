@@ -6,6 +6,8 @@ public class reefBricks extends gameObject{
     boolean breakable;
     private reefHealth h;
     private Color brickColor1;
+    private int value;
+
     reefBricks(int type, int startX,int startY, int length, int direction, boolean breakables)
     {
 
@@ -21,30 +23,43 @@ public class reefBricks extends gameObject{
         this.breakable = breakables;
         if (breakables == true && type == 1)
         {
-                brickColor1 = Color.pink;
+            brickColor1 = Color.pink;
+            value = 100;
         }
         else if (breakables == true && type == 2)
         {
             brickColor1 = Color.GREEN;
+            value = 100;
         }
         else if( breakables == true && type == 3)
         {
             brickColor1 = Color.CYAN;
+            value = 100;
         }
         else if( breakables == true && type == 4)
         {
             brickColor1 = Color.MAGENTA;
+            value = 200;
         }
         else if (breakables == true && type == 5)
         {
-                brickColor1 = Color.ORANGE;
+            brickColor1 = Color.ORANGE;
+            value = 300;
         }
 
-        else
+        else if (breakables == false && type == 6)
         {
             brickColor1 = Color.GRAY;
         }
 
+    }
+
+    public int getValue()
+    {
+        return  value;
+    }
+    public int getDirection(){
+        return this.direction;
     }
 
     public boolean is_breakable()
@@ -55,7 +70,7 @@ public class reefBricks extends gameObject{
     @Override
     public int whoAmI()
     {
-        if ( breakable = true)
+        if ( breakable == true)
         {
             return BRICK;
         }
