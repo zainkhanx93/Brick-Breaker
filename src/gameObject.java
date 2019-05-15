@@ -32,9 +32,15 @@ public class gameObject {
     public int getx(){
         return this.x;
     }
+    public void setx(int  a){
+        this.x = a;
+    }
 
     public int gety(){
         return this.y;
+    }
+    public void sety(int  a){
+        this.y = a;
     }
 
     public int getLength(){

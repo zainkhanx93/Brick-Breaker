@@ -81,12 +81,21 @@ public class SuperRainbow extends JPanel {
 
     void MoveNextLevel(){
         this.gameLevel++;
+        this.p1.setRunning(false);
+        if (this.gameLevel > 3){
+            if(gameLevel == 4)
+                System.out.println(" ******** Game Done *********");
+            return;
+        }
         if (gameLevel == 1)
             return;
         if (gameLevel > 1)
         {
+            System.out.println("Moving to next level ");
             this.p1.setNextSpeed();
-            this.p1.setRunning(false);
+            this.p1.setAngle(90);
+            this.p1.setx(520);
+            this.p1.sety(620);
         }
         RedrawBricks();
 
