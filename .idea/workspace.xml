@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c84839-404c-4491-a98c-3d5815a8d847" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/totalScore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kutch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kutch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SuperRainbow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuperRainbow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reefBricks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reefBricks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reefControls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reefControls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reefScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reefScore.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,12 +19,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Kutch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
+            <state relative-caret-position="-920">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3334#3335#0" expanded="true" />
-                <element signature="e#3362#3363#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reefControls.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
+            <state relative-caret-position="1360">
               <caret line="68" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -49,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SuperRainbow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
-              <caret line="305" column="1" selection-start-line="305" selection-start-column="1" selection-end-line="305" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/totalScore.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="740">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,16 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reefBricks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
+            <state relative-caret-position="1740">
               <caret line="95" selection-start-line="95" selection-end-line="95" />
-              <folding>
-                <element signature="e#1400#1401#0" expanded="true" />
-                <element signature="e#1429#1430#0" expanded="true" />
-                <element signature="e#1460#1461#0" expanded="true" />
-                <element signature="e#1497#1498#0" expanded="true" />
-                <element signature="e#1538#1539#0" expanded="true" />
-                <element signature="e#1570#1571#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -90,25 +76,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gameObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
+            <state relative-caret-position="1040">
               <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
-              <caret line="222" selection-start-line="222" selection-end-line="222" />
+            <state relative-caret-position="471">
+              <caret line="132" column="26" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#701#702#0" expanded="true" />
                 <element signature="e#735#736#0" expanded="true" />
                 <element signature="e#1069#1070#0" expanded="true" />
                 <element signature="e#1095#1096#0" expanded="true" />
-                <element signature="e#5678#5679#0" expanded="true" />
-                <element signature="e#5717#5718#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reefHealth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
+            <state relative-caret-position="1380">
               <caret line="89" selection-start-line="89" selection-end-line="89" />
             </state>
           </provider>
@@ -126,14 +110,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reefScore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
+            <state relative-caret-position="1700">
               <caret line="94" selection-start-line="94" selection-end-line="94" />
               <folding>
-                <element signature="e#1315#1316#0" expanded="true" />
-                <element signature="e#1343#1344#0" expanded="true" />
-                <element signature="e#1383#1384#0" expanded="true" />
-                <element signature="e#1414#1415#0" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
+                <element signature="e#1320#1321#0" expanded="true" />
                 <element signature="e#1348#1349#0" expanded="true" />
               </folding>
             </state>
@@ -159,21 +139,21 @@
         <option value="$PROJECT_DIR$/src/TRE.java" />
         <option value="$PROJECT_DIR$/src/Tank.java" />
         <option value="$PROJECT_DIR$/src/reefPowers.java" />
-        <option value="$PROJECT_DIR$/src/Kutch.java" />
         <option value="$PROJECT_DIR$/src/gameObject.java" />
-        <option value="$PROJECT_DIR$/src/pop.java" />
         <option value="$PROJECT_DIR$/src/reefBricks.java" />
         <option value="$PROJECT_DIR$/src/reefControls.java" />
         <option value="$PROJECT_DIR$/src/reefHealth.java" />
         <option value="$PROJECT_DIR$/src/reefScore.java" />
-        <option value="$PROJECT_DIR$/src/SuperRainbow.java" />
         <option value="$PROJECT_DIR$/src/totalScore.java" />
+        <option value="$PROJECT_DIR$/src/SuperRainbow.java" />
+        <option value="$PROJECT_DIR$/src/pop.java" />
+        <option value="$PROJECT_DIR$/src/Kutch.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="570" />
-    <option name="y" value="75" />
+    <option name="x" value="756" />
+    <option name="y" value="65" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -182,6 +162,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="secondGame" type="58d84e3e:PackageViewProjectNode" />
+              <item name="secondGame" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,24 +190,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="secondGame" type="58d84e3e:PackageViewProjectNode" />
-              <item name="secondGame" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557768196736" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557881389577" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -293,15 +273,16 @@
       <workItem from="1557035251209" duration="7771000" />
       <workItem from="1557102851837" duration="7950000" />
       <workItem from="1557438384408" duration="277000" />
-      <workItem from="1557767960268" duration="125000" />
+      <workItem from="1557767960268" duration="1483000" />
+      <workItem from="1557872872623" duration="2271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61499000" />
+    <option name="totallyTimeSpent" value="65128000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="756" y="65" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -309,7 +290,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.27571115" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2822757" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -318,7 +299,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" visible="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.3322851" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.3322851" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32704404" />
@@ -370,92 +351,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Kutch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3334#3335#0" expanded="true" />
-            <element signature="e#3362#3363#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="222" selection-start-line="222" selection-end-line="222" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#5678#5679#0" expanded="true" />
-            <element signature="e#5717#5718#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reefBricks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1429#1430#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="e#1538#1539#0" expanded="true" />
-            <element signature="e#1570#1571#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reefControls.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
+        <state relative-caret-position="1360">
           <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reefHealth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reefScore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1343#1344#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SuperRainbow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="305" column="1" selection-start-line="305" selection-start-column="1" selection-end-line="305" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -465,9 +364,75 @@
     <entry file="file://$PROJECT_DIR$/src/totalScore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reefBricks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reefHealth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reefScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="e#1320#1321#0" expanded="true" />
+            <element signature="e#1348#1349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SuperRainbow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kutch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-920">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="132" column="26" selection-start-line="132" selection-start-column="26" selection-end-line="132" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
           </folding>
         </state>
       </provider>

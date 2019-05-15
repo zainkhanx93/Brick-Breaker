@@ -21,7 +21,7 @@ public class pop extends gameObject{
         this.k = ku;
         this.health = h;
         this.scr=sc;
-        this.speed = 10;
+        this.speed = 7;
         this.running = false;
 
     }
@@ -75,11 +75,11 @@ public class pop extends gameObject{
             width_ = element.getwidth();
             //System.out.println(x_ + " " + y_+" "+len_+" "+width_+ " "  + x +" " + y);
             if (element.whoAmI() == POP) continue;
-            ;
+
             if (((x > x_ && x < (x_ + width_)) && (y > y_ && y < (y_ + len_))) ||
                     (((x + 5) > x_ && (x + 5) < (x_ + width_)) && (y > y_ && y < (y_ + len_))) ||
                     ((x > x_ && x < (x_ + width_)) && ((y + 5) > y_ && (y + 5) < (y_ + len_))) ||
-                    (((x + 5) > x_ && (x + 5) < (x_ + width_)) && ((y + 5) > y_ && (y + 5) < (y_ + len_)))) {
+                    (((x + 3) > x_ && (x + 3) < (x_ + width_)) && ((y + 5) > y_ && (y + 5) < (y_ + len_)))) {
                 //  System.out.println("Bullet Collision");
 
                 if (((gameObject) object).BRICK == element.whoAmI()) {
@@ -117,11 +117,11 @@ public class pop extends gameObject{
             width_ = element.getwidth();
             //System.out.println(x_ + " " + y_+" "+len_+" "+width_+ " "  + x +" " + y);
             if (element.whoAmI() == POP) continue;
-            ;
+
             if (((x > x_ && x < (x_ + width_)) && (y > y_ && y < (y_ + len_))) ||
-                    (((x + 10) > x_ && (x + 10) < (x_ + width_)) && (y > y_ && y < (y_ + len_))) ||
-                    ((x > x_ && x < (x_ + width_)) && ((y + 5) > y_ && (y + 5) < (y_ + len_))) ||
-                    (((x + 10) > x_ && (x + 10) < (x_ + width_)) && ((y + 5) > y_ && (y + 5) < (y_ + len_)))) {
+                    (((x + 2) > x_ && (x + 2) < (x_ + width_)) && (y > y_ && y < (y_ + len_))) ||
+                    ((x > x_ && x < (x_ + width_)) && ((y + 2) > y_ && (y + 2) < (y_ + len_))) ||
+                    (((x + 2) > x_ && (x + 2) < (x_ + width_)) && ((y + 2) > y_ && (y + 2) < (y_ + len_)))) {
                 //  System.out.println("Bullet Collision");
 
 
@@ -130,7 +130,7 @@ public class pop extends gameObject{
                     if (w == k) {
                         // Chsnge Angle/ this is the bouncing back
                         this.angle *= -1;
-                        this.angle = this.angle % 360;
+                        //this.angle = this.angle % 360;
 
                         //  Check where in Kutch it is hitting
                         // if 1st 1/3 then subtract 30 from angle

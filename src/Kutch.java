@@ -20,7 +20,7 @@ public class Kutch extends gameObject{
 
     Kutch(int start_x, int start_y, int vx, int vy,int length, int dir, SuperRainbow s)
     {
-        super(start_x,start_y,10,length);
+        super(start_x,start_y,15,length);
         this.vx = vx;
         this.vy = vy;
         // this.x = x;

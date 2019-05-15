@@ -71,7 +71,7 @@ public class SuperRainbow extends JPanel {
                     trex.repaint();
                 }
 
-                Thread.sleep(1000 / 70);
+                Thread.sleep(1000 / 100);
             }
         } catch (InterruptedException ignored) {
 
@@ -222,8 +222,8 @@ public class SuperRainbow extends JPanel {
 
         tc = new totalScore(1110, 400,0,sc1);
         kh = new reefHealth(1100,80,3,0);
-        k1 = new Kutch (450,900,0,0,150, 1, this);
-        p1 = new pop (520,600,3,0,90,this, kh,k1,tc);
+        k1 = new Kutch (450,900,0,0,200, 1, this);
+        p1 = new pop (520,620,3,0,90,this, kh,k1,tc);
         Controls.add(p1);
         Controls.add(k1);
         Controls.add(tc);
