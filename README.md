@@ -7,7 +7,7 @@ Open your broswer and go to the repo link and copy the clone link. Go to your de
   
   
 ## Run :
-   # If you decided to build a JAR then you have two option on how to run the program. 
+   If you decided to build a JAR then you have two option on how to run the program. 
    1. For the JAR method go to the desktop and open up the folder for program. Go into the out folder and then the artifacts folder. Then click on the JAR and run the program.
    2. For the Non-JAR method. In intellij move to the tab that says run on top and click on the option that says run. if the program askes to edit configuration, then please select on SuperRainbowReef class. 
 
